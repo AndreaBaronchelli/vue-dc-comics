@@ -3,23 +3,23 @@
       <div class="container">
           <div class="card">
               <img src="../assets/images/buy-comics-digital-comics.png" alt="">
-              <h4>DIGITAL COMICS</h4>
+              <div class="label">DIGITAL COMICS</div>
           </div>
           <div class="card">
               <img src="../assets/images/buy-comics-merchandise.png" alt="">
-              <h4>DC MERCHANDISE</h4>
+              <div class="label">MERCHANDISE</div>
           </div>
           <div class="card">
               <img src="../assets/images/buy-comics-subscriptions.png" alt="">
-              <h4>SUBSCRIPTION</h4>
+              <div class="label">SUBSCRIPTION</div>
           </div>
           <div class="card">
               <img src="../assets/images/buy-comics-shop-locator.png" alt="">
-              <h4>COMIC SHOP LOCATOR</h4>
+              <div class="label">COMIC SHOP LOCATOR</div>
           </div>
           <div class="card">
               <img src="../assets/images/buy-dc-power-visa.svg" alt="">
-              <h4>DC POWER VISA</h4>
+              <div class="label">DC POWER VISA</div>
           </div>
       </div>
   </div>
@@ -52,7 +52,10 @@ export default {
 
     .card img {
         height: 55px;
-        margin-right: 10px;
+        margin-right: 15px;
+    }
+    .card .label {
+        font-size: 14px;
     }
 
     .card:last-child img {
