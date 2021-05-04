@@ -80,6 +80,7 @@ export default {
         display: flex;
         justify-content: space-between;
         padding: 1rem 0;
+        margin-bottom: 2px;
     }
 
     header img {
@@ -97,7 +98,6 @@ export default {
         padding-bottom: 3rem;
         margin-right: 30px;
         border-bottom: 4px solid transparent;
-        text-decoration: none;
         font-size: 12px;
         font-weight: 700;
     }
