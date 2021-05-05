@@ -75,16 +75,17 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+    @import "../styles/vars";
     header {
         display: flex;
         justify-content: space-between;
         padding: 1rem 0;
         margin-bottom: 2px;
-    }
-
-    header img {
-        height: 80px;
+        
+        img {
+            height: 80px;
+        }
     }
 
     ul {
@@ -92,19 +93,18 @@ export default {
         height: 100%;
         align-items: center;
         list-style: none;
-    }
-
-    nav a {
+        
+        a {
         padding-bottom: 3rem;
         margin-right: 30px;
         border-bottom: 4px solid transparent;
         font-size: 12px;
         font-weight: 700;
-    }
-
-    nav a:hover,
-    nav a.active {
-        color: dodgerblue;
-        border-bottom-color: dodgerblue;
+        &:hover,
+        &.active {
+            color: $primary-color;
+            border-bottom-color: $primary-color;
+        }
+        }
     }
 </style>

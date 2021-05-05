@@ -69,79 +69,81 @@ export default {
 }
 </script>
 
-<style>
+<style scoped lang="scss">
+    @import "../styles/vars";
+
     .footer-top {
         height: 380px;
         padding: 2rem 0;
         background-image: url(../assets/images/footer-bg.jpg);
         background-size: cover;
         overflow: hidden;
-    }
+        
+        .container {
+            position: relative;
+            display: flex;
+        }
 
-    .footer-top .container {
-        position: relative;
-        display: flex;
-    }
+        ul {
+            list-style: none;
+            margin-bottom: 25px;
+            margin-right: 2rem;
+        }
 
-    .footer-top ul {
-        list-style: none;
-        margin-bottom: 25px;
-        margin-right: 2rem;
-    }
-
-    .footer-top a {
-        margin-bottom: 10px;
-        font-size: 12px;
-    }
-
-    .footer-top a:hover {
-        color: dodgerblue;
-    }
-
-    .footer-top h3 {
-        color: #fff;
-        margin-bottom: 1rem;
-    }
-    
-    .footer-top img {
-        position: absolute;
-        right: 0;
-        top: -125px;
+        a {
+            margin-bottom: 10px;
+            font-size: 12px;
+            &:hover {
+                color: $primary-color;
+            }
+        }
+        
+        h3 {
+            color: #fff;
+            margin-bottom: 1rem;
+        }
+        
+        img {
+            position: absolute;
+            right: 0;
+            top: -125px;
+        }
     }
 
     .footer-bottom {
         padding: 2rem 0;
         background-color: #303030;
-    }
+        
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-    .footer-bottom .container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+        button {
+            border: 2px solid $primary-color;
+            padding: 1rem;
+            font-size: 16px;
+            color: #fff;
+            background: transparent;
+            cursor: pointer;
+        }
 
-    .footer-bottom button {
-        outline: none;
-        border: 2px solid dodgerblue;
-        padding: 1rem;
-        font-size: 16px;
-        color: #fff;
-        background: transparent;
-        cursor: pointer;
-    }
+        .social {
+            
+            ul {
+                display: flex;
+                align-items: center;
+                list-style: none;
+                
+                li {
+                    margin-right: 20px;
+                }
 
-    .footer-bottom .social ul {
-        display: flex;
-        align-items: center;
-        list-style: none;
+                h3 {
+                    color: $primary-color;
+                }
+            }
+        }
     }
-
-    .footer-bottom .social ul li {
-        margin-right: 20px;
-    }
-
-    .footer-bottom .social ul h3 {
-        color: dodgerblue;
-    }
-
 </style>

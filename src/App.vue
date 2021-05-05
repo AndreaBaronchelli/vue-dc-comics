@@ -37,22 +37,7 @@ export default {
 </script>
 
 <style lang="scss">
-// GENERAL
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
-}
-
-a {
-  color: gray;
-  text-decoration: none;
-}
-
-// UTILITIES
-.container {
-  max-width: 1270px;
-  margin: 0 auto;
-}
+@import "./styles/general.scss";
+@import "./styles/utilities.scss";
+@import "./styles/vars.scss";
 </style>

@@ -12,17 +12,18 @@ export default {
 }
 </script>
 
-<style>
+<style scoped lang="scss">
   .product {
     margin-right: 25px;
     margin-bottom: 50px;
     width: calc(100% / 6 - 25px);
     cursor: pointer;
-  }
-  
-  .label {
+    
+    .label {
     font-size: 14px;
     color: #fff;
     text-transform: uppercase;
+    }
   }
+
 </style>

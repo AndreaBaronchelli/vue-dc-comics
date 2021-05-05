@@ -8,7 +8,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .hero {
     height: 400px;
     background-image: url("../assets/images/jumbotron.jpg");

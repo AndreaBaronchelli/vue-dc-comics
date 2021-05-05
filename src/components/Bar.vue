@@ -31,10 +31,11 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+    @import "../styles/vars";
+
     .bar {
-        
-        background-color: #0082f9;
+        background-color: $primary-color;
     }
 
     .container {
@@ -48,17 +49,18 @@ export default {
         align-items: center;
         color: #fff;
         cursor: pointer;
-    }
+        
+        img {
+            height: 55px;
+            margin-right: 15px;
+        }
 
-    .card img {
-        height: 55px;
-        margin-right: 15px;
-    }
-    .card .label {
-        font-size: 14px;
-    }
+        &:last-child img {
+            height: 35px
+        }
 
-    .card:last-child img {
-        height: 35px;
+        .label {
+            font-size: 14px;
+        }
     }
 </style>

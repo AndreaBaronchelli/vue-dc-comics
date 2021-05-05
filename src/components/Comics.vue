@@ -113,6 +113,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+    @import "../styles/vars";
 
     main {
         position: relative;
@@ -132,7 +133,7 @@ export default {
         transform: translateY(-50%);
         color: #fff;
         padding: 1rem 2rem;
-        background-color: dodgerblue;
+        background-color: $primary-color;
     }
 
     button {
@@ -144,7 +145,7 @@ export default {
         padding: .75rem 3rem;
         color: #fff;
         font-weight: 700;
-        background-color: dodgerblue;
+        background-color: $primary-color;
         cursor: pointer;
     }
 
