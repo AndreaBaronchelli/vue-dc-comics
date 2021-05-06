@@ -12,5 +12,6 @@ export default {
 .hero {
     height: 400px;
     background-image: url("../assets/images/jumbotron.jpg");
+    background-size: cover;
 }
 </style>
